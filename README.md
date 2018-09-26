@@ -20,9 +20,9 @@ Our aim is to give personalized movie recommendations to users. In order to do t
 
 Authors
 ------
-Suraj Aralihalli
-Sumanth V Rao
-Sumedh Basarkod
+* **Suraj Aralihalli** - [Profile](https://github.com/SurajAralihalli)<br>
+* **Sumedh Pb** - [Profile](https://github.com/sumedhpb)<br>
+* **Sumanth V Rao** - [Profile](https://github.com/sumanthvrao)<br>
 
 
 
