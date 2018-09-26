@@ -11,11 +11,11 @@ Description Here
 [DataSet Link](https://grouplens.org/datasets/movielens/)
 
 
-##Project Description
+## Project Description
+-
 
-MovieLens offers dataset offers about 20 million ratings and 465,000 tag applications applied to 27,000 movies by 138,000 user.
-Our aim is to give personalized movie recommendations to users. In order to do this we build similarities between users and movies.
-
+**MovieLens** offers dataset offers about 20 million ratings and 465,000 tag applications applied to 27,000 movies by 138,000 user.
+Our aim is to give personalized movie recommendations to users. In order to do this we build a system which recognizes similarities between users and movies. 
 
 
 Authors
