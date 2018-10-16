@@ -1,5 +1,6 @@
 
-
+##nb viewer link of the file (better rendered):
+* https://nbviewer.jupyter.org/github/sumanthvrao/We_R_Pythons/blob/master/stocktaking.ipynb
 ```python
 import pandas as pd
 import numpy as np
