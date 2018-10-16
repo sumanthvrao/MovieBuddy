@@ -344,7 +344,7 @@ plt.show()
 ```
 
 
-![png](output_9_0.png)
+![png](images/output_9_0.png)
 
 
 
@@ -547,7 +547,7 @@ plt.show()
     
 
 
-![png](output_14_1.png)
+![png](images/output_14_1.png)
 
 
 
@@ -577,7 +577,7 @@ for i in genres_list:
     
 
 
-![png](output_15_1.png)
+![png](images/output_15_1.png)
 
 
     Adventure
@@ -585,7 +585,7 @@ for i in genres_list:
     
 
 
-![png](output_15_3.png)
+![png](images/output_15_3.png)
 
 
     Animation
@@ -593,7 +593,7 @@ for i in genres_list:
     
 
 
-![png](output_15_5.png)
+![png](images/output_15_5.png)
 
 
     Children
@@ -601,7 +601,7 @@ for i in genres_list:
     
 
 
-![png](output_15_7.png)
+![png](images/output_15_7.png)
 
 
     Comedy
@@ -609,7 +609,7 @@ for i in genres_list:
     
 
 
-![png](output_15_9.png)
+![png](images/output_15_9.png)
 
 
     Crime
@@ -617,7 +617,7 @@ for i in genres_list:
     
 
 
-![png](output_15_11.png)
+![png](images/output_15_11.png)
 
 
     Documentary
@@ -625,7 +625,7 @@ for i in genres_list:
     
 
 
-![png](output_15_13.png)
+![png](images/output_15_13.png)
 
 
     Drama
@@ -633,7 +633,7 @@ for i in genres_list:
     
 
 
-![png](output_15_15.png)
+![png](images/output_15_15.png)
 
 
     Fantasy
@@ -641,7 +641,7 @@ for i in genres_list:
     
 
 
-![png](output_15_17.png)
+![png](images/output_15_17.png)
 
 
     Film-Noir
@@ -649,7 +649,7 @@ for i in genres_list:
     
 
 
-![png](output_15_19.png)
+![png](images/output_15_19.png)
 
 
     Horror
@@ -657,7 +657,7 @@ for i in genres_list:
     
 
 
-![png](output_15_21.png)
+![png](images/output_15_21.png)
 
 
     Musical
@@ -665,7 +665,7 @@ for i in genres_list:
     
 
 
-![png](output_15_23.png)
+![png](images/output_15_23.png)
 
 
     Mystery
@@ -673,7 +673,7 @@ for i in genres_list:
     
 
 
-![png](output_15_25.png)
+![png](images/output_15_25.png)
 
 
     Romance
@@ -681,7 +681,7 @@ for i in genres_list:
     
 
 
-![png](output_15_27.png)
+![png](images/output_15_27.png)
 
 
     Sci-Fi
@@ -689,7 +689,7 @@ for i in genres_list:
     
 
 
-![png](output_15_29.png)
+![png](images/output_15_29.png)
 
 
     Thriller
@@ -697,7 +697,7 @@ for i in genres_list:
     
 
 
-![png](output_15_31.png)
+![png](images/output_15_31.png)
 
 
     War
@@ -705,7 +705,7 @@ for i in genres_list:
     
 
 
-![png](output_15_33.png)
+![png](images/output_15_33.png)
 
 
     Western
@@ -713,7 +713,7 @@ for i in genres_list:
     
 
 
-![png](output_15_35.png)
+![png](images/output_15_35.png)
 
 
 
