@@ -6,7 +6,7 @@ MovieBinge
 
 Isn't the job of searching through a list of umpteen movies, searching for the one which fits your taste, tiring? Our main goal is to make this job easier for you. We strongly promote binge-watching and to provide personalised movie recommendatations from your own past viewing history. Enjoy!
 
-[DataSet Link](https://grouplens.org/datasets/movielens/) (ml-latest-small.zip)
+[Dataset Link](https://grouplens.org/datasets/movielens/) (ml-latest-small.zip)
 
 
 ## Project Description
