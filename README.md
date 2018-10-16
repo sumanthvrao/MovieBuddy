@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 Data Analytics Project for the year 2018
 
 MovieBinge
