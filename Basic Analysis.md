@@ -175,7 +175,7 @@ plt.show()
 ```
 
 
-![png](output_5_0.png)
+![png](images/output_5_0.png)
 
 
 
@@ -197,7 +197,7 @@ plt.show()
 ```
 
 
-![png](output_6_0.png)
+![png](images/output_6_0.png)
 
 
 
