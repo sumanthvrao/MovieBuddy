@@ -3,7 +3,7 @@ Data Analytics Project for the year 2018
 MovieBuddy
 ======
 
-Isn't watching an entire movie all by yourself depressing? Watching any movie with like minded  friends and loved ones helps you experience the joy of a comedy, the adventure of a thriller, the tears of drama , and a pinch of romance. We help you form your own clan of stormtroopers or your own school of wizards. In addition, we bring together users over a common screen in the prospects of helping them finding their partner at heart. We provide personalised movie recommendations from your own past viewing history and ensure your movie choices are unregrettable. Enjoy with your true movieBuddy!
+Isn't watching an entire movie all by yourself depressing? Watching any movie with like-minded  friends and loved ones helps you experience the joy of a comedy, the adventure of a thriller, the tears of drama , and a pinch of romance. We help you form your own clan of stormtroopers or your own school of wizards. In addition, we bring together users over a common screen in the prospects of helping them finding their partner at heart. We provide personalised movie recommendations from your own past viewing history and ensure your movie choices are unregrettable. Enjoy with your true movieBuddy!
 
 [Dataset Link](https://grouplens.org/datasets/movielens/100k/) (movielens-100k-dataset.zip)
 
