@@ -3,4 +3,5 @@
 All Jupyter Notebooks on this github repository are hosted on the nbviewer website. <br>
 The links for the same are given below.
 
-[BasicAnalysis.ipynb](https://nbviewer.jupyter.org/github/sumanthvrao/We_R_Pythons/blob/master/BasicAnalysis.ipynb)
+* Stocktaking - [Stocktaking.ipynb](https://nbviewer.jupyter.org/github/sumanthvrao/We_R_Pythons/blob/master/stocktaking.ipynb)
+* Basic Analysis - [BasicAnalysis.ipynb](https://nbviewer.jupyter.org/github/sumanthvrao/We_R_Pythons/blob/master/BasicAnalysis.ipynb)
