@@ -17,6 +17,20 @@ Our data set contains:
 * Each user has rated at least 20 movies. 
 * Simple demograpic information about Users.
 
+## Overview
+A brief gist of what each file in our repository stands for :<br>
+* **BasicAnalysis_and_Stocktaking** - Basic summary statistics of the data. Visualizations capturing some key aspects of the data.
+* **Getting_data_from_api** - tmdb id's were used to fetch additional data regarding movies from the website. tmdb API was used. Data of director, actor, actress, genre, etc were extracted and saved in the ml-100k folder.
+* **ml-100k** - Complete Dataset from MovieLens together with the data extracted from the API's . This also contains the user-item matrix, predicted value matrix, obtained in later stages.
+* **CF-surprise-all-algos.ipynb** - Comparison between algorithms for predicting rating. Surprise library was used. SVD, Cross_validation , Variations of KNN, were tried. SVD was chosen on the basis of RMSE.
+* **CF_surprise_SVD.ipynb** - SVD Algorithm of Surprise was used to build predictions for those userid,movie id paris not in training dataset. top k items for each user were retained based on ratings.
+* **Collaborative_filtering_RBM.ipynb** - Restricted Boltzman Machine approach for Collaborative Filtering. New, unwatched movies were suggested for a particular user in decresing order of likelihood.
+* **Content_based_filtering.ipynb** - Generate content based suggestions based on combined probability of similar Director, Actors, Genre from other movies as features.
+* **Final_Module.ipynb** - The final notebook containing the driver code and GUI to help get movie suggestions.
+* **Front_End_Widget.ipynb** - Front_End_Widgets for Dynamic output. Download and compile to try the interactive output of the notebook.
+* **JupyterLinks.md** - All .ipynb files have been hosted on nbviewer and their link posted here.
+* **We_R_PYthons_LiteratureSurvey** - Litrature Survey for mid-term report.
+
 Authors
 ------
 * **Suraj Aralihalli** - [Profile](https://github.com/SurajAralihalli)<br>
