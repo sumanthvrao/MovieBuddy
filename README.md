@@ -7,6 +7,10 @@ Isn't watching an entire movie all by yourself depressing? Watching any movie wi
 
 [Dataset Link](https://grouplens.org/datasets/movielens/100k/) (movielens-100k-dataset.zip)
 
+[![Python 3](https://img.shields.io/badge/python-3-blue.svg)](https://www.python.org/download/releases/3.0/)
+[![Jupyter notebook 3](https://img.shields.io/badge/jupyter%20notebook-5.0.0-orange.svg
+)](https://jupyter-notebook.readthedocs.io/en/5.0.0/)
+
 
 ## Project Description
 
