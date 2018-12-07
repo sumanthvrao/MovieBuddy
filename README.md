@@ -10,7 +10,11 @@ Isn't watching an entire movie all by yourself depressing? Watching any movie wi
 [![Python 3](https://img.shields.io/badge/python-3-blue.svg)](https://www.python.org/download/releases/3.0/)
 [![Jupyter notebook 3](https://img.shields.io/badge/jupyter%20notebook-5.0.0-orange.svg
 )](https://jupyter-notebook.readthedocs.io/en/5.0.0/)
-
+[![Collaborative filtering](https://img.shields.io/badge/collaborative-filtering-red.svg
+)](#)
+[![Content Based filtering](https://img.shields.io/badge/contest%20based-filtering-yellow.svg)](#)
+[![Surprise Library](https://img.shields.io/badge/surprise-library-brightgreen.svg)](http://surpriselib.com/)
+[![TensorFlow](https://img.shields.io/badge/tensorflow%20-1.5-blue.svg)](http://surpriselib.com/)
 
 ## Project Description
 
