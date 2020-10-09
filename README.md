@@ -3,7 +3,7 @@ Data Analytics Project for the year 2018
 MovieBuddy
 ======
 
-Isn't watching an entire movie all by yourself depressing? Watching any movie with like-minded  friends and loved ones helps you experience the joy of a comedy, the adventure of a thriller, the tears of drama , and a pinch of romance. We help you form your own clan of stormtroopers or your own school of wizards. In addition, we bring together users over a common screen in the prospects of helping them finding their partner at heart. We provide personalised movie recommendations from your own past viewing history and ensure your movie choices are unregrettable. Enjoy with your true MovieBuddy!
+How  amazing would it be if you could watch your favorite movie with someone who has similar interests like you! Our model not only recommends you a movie you would love to watch but also brings together people with similar preference in movies. We have tried 3 different recommendation techniques to empower this idea.
 
 [Dataset Link](https://grouplens.org/datasets/movielens/100k/) (movielens-100k-dataset.zip)
 
@@ -25,12 +25,42 @@ Our data set contains:
 * Each user has rated at least 20 movies. 
 * Simple demograpic information about Users.
 
-## Overview
+### Approach 1 - Content Based Filtering
+
+Content based filtering also referred to as cognitive filtering recommends items based on comparison between the content of items which means the items recommended by the model is same for any user. Content-based filtering avoids the cold-start problem that forestalls other recommendation techniques, as the the system considers only the content of the movies to make recommendations.
+
+Content Based Recommendations rely on the characteristics of the item itself. The major challenge is in identifying these characteristics of the item to be considered. The Original MovieLens dataset consists of limited information about each movie - details like movie title, year of release, movie id, imdb url and list of genres. This data alone was insufficient to bring out valuable recommendations for a movie. We used tmdb (The Movie Database) api to extract more details for each movie. This api enabled us to obtain other characteristics like names of the protagonists, director etc. We created a hybrid feature for each movie which comprised of the name of the movie, year of release, list of genres, name of the director, name of the primary actor, name of secondary actor.
+
+The Countvectorizer module identified 9105 distinct new features for each movie where each feature is a word extracted from the hybrid feature set of all the movies. We then calculated the self-cosine similarity of the matrix to compare each movie with every other movie in the dataset. Based on this similarity matrix we recommend 15 movies for every given movie.
+
+### Approach 2 - Collaborative Filtering
+
+Collaborative filtering is a method of making automatic predictions (filtering) about the interests of a user by collecting preferences from many users. The collaborative filtering model attempts to recommend movies and how much a user likes each movie by considering either user-user similarity or movie-movie similarity
+
+Surprise (Simple Python RecommendatIon System Engine) library for Collaborative filtering. 
+
+| Algorithm                         | Mean RMSE | Mean MAE | Mean fit time | Mean test time |
+|-----------------------------------|-----------|----------|---------------|----------------|
+| SVD                               | 0.9358    | 0.7375   | 11.38         | 0.45           |
+| KNN Basic (pearson baseline)      | 1.0005    | 0.7917   | 5.65          | 10.91          |
+| KNN Basic (MSD)                   | 0.979     | 0.7731   | 1.23          | 8.47           |
+| KNN Basic (cosine)                | 1.0174    | 0.8045   | 4.41          | 9.26           |
+| KNN with means (pearson baseline) | 0.9382    | 0.731    | 4.5           | 8.74           |
+| KNN with means (MSD)              | 0.9502    | 0.7486   | 1.34          | 9.71           |
+| KNN with means (cosine)           | 0.9556    | 0.7546   | 4             | 8.55           |
+
+We chose SVD as our collaborative filtering algorithm as it had the least testing time, and lower RMSE and MAE values across the 5-folds.
+
+### Approach 3 - Restricted Boltzman Machine
+
+2 layered undirected neural network was used.
+
+## File Structure
 A brief gist of what each file in our repository stands for :<br>
 * **BasicAnalysis_and_Stocktaking** - Basic summary statistics of the data. Visualizations capturing some key aspects of the data.
-* **Getting_data_from_api** - tmdb id's were used to fetch additional data regarding movies from the website. tmdb API was used. Data of director, actor, actress, genre, etc were extracted and saved in the ml-100k folder.
+* **Getting_data_from_api** - Fetching additional tmdb data
 * **ml-100k** - Complete Dataset from MovieLens together with the data extracted from the API's . This also contains the user-item matrix, predicted value matrix, obtained in later stages.
-* **CF-surprise-all-algos.ipynb** - Comparison between algorithms for predicting rating. Surprise library was used. SVD, Cross_validation , Variations of KNN, were tried. SVD was chosen on the basis of RMSE.
+* **CF-surprise-all-algos.ipynb** - Comparison between algorithms for predicting rating.
 * **CF_surprise_SVD.ipynb** - SVD Algorithm of Surprise was used to build predictions for those userid,movie id paris not in training dataset. top k items for each user were retained based on ratings.
 * **Collaborative_filtering_RBM.ipynb** - Restricted Boltzman Machine approach for Collaborative Filtering. New, unwatched movies were suggested for a particular user in decresing order of likelihood.
 * **Content_based_filtering.ipynb** - Generate content based suggestions based on combined probability of similar Director, Actors, Genre from other movies as features.
@@ -38,6 +68,7 @@ A brief gist of what each file in our repository stands for :<br>
 * **Front_End_Widget.ipynb** - Front_End_Widgets for Dynamic output. Download and compile to try the interactive output of the notebook.
 * **JupyterLinks.md** - All .ipynb files have been hosted on nbviewer and their link posted here.
 * **We_R_PYthons_LiteratureSurvey** - Litrature Survey for mid-term report.
+
 
 Authors
 ------
