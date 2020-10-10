@@ -1,5 +1,3 @@
-Data Analytics Project for the year 2018
-
 Link to Report - https://github.com/sumanthvrao/We_R_Pythons/blob/master/We_R_Pythons_FinalReport.pdf
 
 MovieBuddy
@@ -39,7 +37,7 @@ The Countvectorizer module identified 9105 distinct new features for each movie 
 
 Collaborative filtering is a method of making automatic predictions (filtering) about the interests of a user by collecting preferences from many users. The collaborative filtering model attempts to recommend movies and how much a user likes each movie by considering either user-user similarity or movie-movie similarity
 
-Surprise (Simple Python RecommendatIon System Engine) library for Collaborative filtering. 
+Surprise (Simple Python RecommendatIon System Engine) library was used for Collaborative filtering. Results of running different collaborative filtering algorithms have been documented in the table below.
 
 | Algorithm                         | Mean RMSE | Mean MAE | Mean fit time | Mean test time |
 |-----------------------------------|-----------|----------|---------------|----------------|
@@ -69,7 +67,6 @@ A brief gist of what each file in our repository stands for :<br>
 * **Final_Module.ipynb** - The final notebook containing the driver code and GUI to help get movie suggestions.
 * **Front_End_Widget.ipynb** - Front_End_Widgets for Dynamic output. Download and compile to try the interactive output of the notebook.
 * **JupyterLinks.md** - All .ipynb files have been hosted on nbviewer and their link posted here.
-* **We_R_PYthons_LiteratureSurvey** - Litrature Survey for mid-term report.
 
 
 Authors
