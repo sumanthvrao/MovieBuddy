@@ -1,5 +1,7 @@
 Data Analytics Project for the year 2018
 
+Link to Report - https://github.com/sumanthvrao/We_R_Pythons/blob/master/We_R_Pythons_FinalReport.pdf
+
 MovieBuddy
 ======
 
@@ -53,7 +55,7 @@ We chose SVD as our collaborative filtering algorithm as it had the least testin
 
 ### Approach 3 - Restricted Boltzman Machine
 
-2 layered undirected neural network was used.
+The fundamental idea here is to use an RBM for each user with shared weights for users who rate the same set of movies. Every RBM has the same number of hidden units, but an RBM has active softmax visible units only for the items rated by that user. If two users have rated the same movie, their two RBM’s must use the same weights between the softmax unit for that movie and the hidden units. To ensure binary mappings, nodes with ratings from 1 to k are made for every user’s RBM for each movie he/she has rated. Each node is activated or deactivated based on the value it is looking for. It is shown that an RBM slightly outperform carefully tuned SVD models. A 2 layered undirected neural network was used as an RBM in our case.
 
 ## File Structure
 A brief gist of what each file in our repository stands for :<br>
@@ -61,7 +63,7 @@ A brief gist of what each file in our repository stands for :<br>
 * **Getting_data_from_api** - Fetching additional tmdb data
 * **ml-100k** - Complete Dataset from MovieLens together with the data extracted from the API's . This also contains the user-item matrix, predicted value matrix, obtained in later stages.
 * **CF-surprise-all-algos.ipynb** - Comparison between algorithms for predicting rating.
-* **CF_surprise_SVD.ipynb** - SVD Algorithm of Surprise was used to build predictions for those userid,movie id paris not in training dataset. top k items for each user were retained based on ratings.
+* **CF_surprise_SVD.ipynb** - SVD Algorithm of Surprise was used to build predictions for those user id - movie id pairs not in training dataset. Top k items for each user were retained based on ratings.
 * **Collaborative_filtering_RBM.ipynb** - Restricted Boltzman Machine approach for Collaborative Filtering. New, unwatched movies were suggested for a particular user in decresing order of likelihood.
 * **Content_based_filtering.ipynb** - Generate content based suggestions based on combined probability of similar Director, Actors, Genre from other movies as features.
 * **Final_Module.ipynb** - The final notebook containing the driver code and GUI to help get movie suggestions.
