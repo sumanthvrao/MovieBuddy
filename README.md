@@ -1,9 +1,11 @@
-Link to Report - https://github.com/sumanthvrao/We_R_Pythons/blob/master/We_R_Pythons_FinalReport.pdf
+Code Repository: <a target="_blank" href="https://github.com/sumanthvrao/MovieBuddy" rel="noreferrer noopener">https://github.com/sumanthvrao/MovieBuddy</a>
+
+Report: <a target="_blank" href="https://github.com/sumanthvrao/MovieBuddy/blob/master/We_R_Pythons_FinalReport.pdf" rel="noreferrer noopener">https://github.com/sumanthvrao/MovieBuddy/Report.pdf</a>
 
 MovieBuddy
 ======
 
-How  amazing would it be if you could watch your favorite movie with someone who has similar interests like you! Our model not only recommends you a movie you would love to watch but also brings together people with similar preference in movies. We have tried 3 different recommendation techniques to empower this idea.
+How  amazing would it be if you could watch your favorite movie with someone who has similar interests like you! We compared different recommendation system models (Content-based filtering, Collaborative filtering, Restricted Boltzmann Machine) to find common movie interests among a group of people.
 
 [Dataset Link](https://grouplens.org/datasets/movielens/100k/) (movielens-100k-dataset.zip)
 
@@ -16,7 +18,7 @@ How  amazing would it be if you could watch your favorite movie with someone who
 [![Surprise Library](https://img.shields.io/badge/surprise-library-brightgreen.svg)](http://surpriselib.com/)
 [![TensorFlow](https://img.shields.io/badge/tensorflow%20-1.5-blue.svg)](http://surpriselib.com/)
 
-## Project Description
+## Description
 
 **MovieLens** offers dataset offers about 20 million ratings and 465,000 tag applications applied to 27,000 movies by 138,000 user.
 Our aim is to bring together users with similar movie interests. In order to do this, we make use of users movie ratings and their information. We account for a variety of factors (location, interests , age .. to name some) before suggesting a MovieBuddy to you.<br>
@@ -54,20 +56,6 @@ We chose SVD as our collaborative filtering algorithm as it had the least testin
 ### Approach 3 - Restricted Boltzman Machine
 
 The fundamental idea here is to use an RBM for each user with shared weights for users who rate the same set of movies. Every RBM has the same number of hidden units, but an RBM has active softmax visible units only for the items rated by that user. If two users have rated the same movie, their two RBM’s must use the same weights between the softmax unit for that movie and the hidden units. To ensure binary mappings, nodes with ratings from 1 to k are made for every user’s RBM for each movie he/she has rated. Each node is activated or deactivated based on the value it is looking for. It is shown that an RBM slightly outperform carefully tuned SVD models. A 2 layered undirected neural network was used as an RBM in our case.
-
-## File Structure
-A brief gist of what each file in our repository stands for :<br>
-* **BasicAnalysis_and_Stocktaking** - Basic summary statistics of the data. Visualizations capturing some key aspects of the data.
-* **Getting_data_from_api** - Fetching additional tmdb data
-* **ml-100k** - Complete Dataset from MovieLens together with the data extracted from the API's . This also contains the user-item matrix, predicted value matrix, obtained in later stages.
-* **CF-surprise-all-algos.ipynb** - Comparison between algorithms for predicting rating.
-* **CF_surprise_SVD.ipynb** - SVD Algorithm of Surprise was used to build predictions for those user id - movie id pairs not in training dataset. Top k items for each user were retained based on ratings.
-* **Collaborative_filtering_RBM.ipynb** - Restricted Boltzman Machine approach for Collaborative Filtering. New, unwatched movies were suggested for a particular user in decresing order of likelihood.
-* **Content_based_filtering.ipynb** - Generate content based suggestions based on combined probability of similar Director, Actors, Genre from other movies as features.
-* **Final_Module.ipynb** - The final notebook containing the driver code and GUI to help get movie suggestions.
-* **Front_End_Widget.ipynb** - Front_End_Widgets for Dynamic output. Download and compile to try the interactive output of the notebook.
-* **JupyterLinks.md** - All .ipynb files have been hosted on nbviewer and their link posted here.
-
 
 Authors
 ------
