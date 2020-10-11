@@ -9,6 +9,15 @@ How  amazing would it be if you could watch your favorite movie with someone who
 
 <a target="_blank" href="https://grouplens.org/datasets/movielens/100k/" rel="noreferrer noopener">Dataset Link (movielens-100k-dataset.zip)</a>
 
+[![Python 3](https://img.shields.io/badge/python-3-blue.svg)](https://www.python.org/download/releases/3.0/)
+[![Jupyter notebook 3](https://img.shields.io/badge/jupyter%20notebook-5.0.0-orange.svg
+)](https://jupyter-notebook.readthedocs.io/en/5.0.0/)
+[![Collaborative filtering](https://img.shields.io/badge/collaborative-filtering-red.svg
+)](#)
+[![Content Based filtering](https://img.shields.io/badge/contest%20based-filtering-yellow.svg)](#)
+[![Surprise Library](https://img.shields.io/badge/surprise-library-brightgreen.svg)](http://surpriselib.com/)
+[![TensorFlow](https://img.shields.io/badge/tensorflow%20-1.5-blue.svg)](http://surpriselib.com/)
+
 ## Description
 
 **MovieLens** offers dataset offers about 20 million ratings and 465,000 tag applications applied to 27,000 movies by 138,000 user.
